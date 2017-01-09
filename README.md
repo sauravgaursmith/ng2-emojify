@@ -1,3 +1,4 @@
+Please wait for the documentation. It is not completed yet. We will provide the same on Januaury 10, 2017 (EOD).
 ## This is an angular 2 module to support built-in and custom emoji in an angular 2 project.
 
 ### Installation
@@ -9,9 +10,11 @@ npm install ng2-emojify  --save
 
 After installation, use the following steps
 ####1) Import  `CustomEmotion` and `Emotion` services to the component where you want to use ng2-emojify module like this. 
-Here are two services namely- `CustomEmotion` and `Emotion`. 
-        *Use `CustomEmotion` service to add your custom emoji images or gif files 
-        *Use `Emotion` service to listen each click on emoji shown in emoji menu
+
+Here are two services namely- `CustomEmotion` and `Emotion`.
+
+       Use `CustomEmotion` service to add your custom emoji images or gif files
+       Use `Emotion` service to listen each click on emoji shown in emoji menu
 
 ```js
 import {CustomEmotion, Emotion} from 'ng2-emojify';
