@@ -1,0 +1,62 @@
+{
+  "name": "ng2-emojify",
+  "version": "1.0.3",
+  "description": "An angular 2 module to support built-in and custom emoji ",
+  "main": "ng2-emojify.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ng2-emojify",
+    "ng2",
+    "ng2-emo",
+    "emojify",
+    "custom",
+    "built-in",
+    "emoji",
+    "angular-2",
+    "emotion"
+  ],
+  "author": {
+    "name": "Saurav Singh",
+    "email": "saurav.gaur011@gmail.com",
+    "url": "https://github.com/sauravgaursmith"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@angular/common": "~2.1.0",
+    "@angular/compiler": "~2.1.0",
+    "@angular/core": "~2.1.0",
+    "@angular/forms": "~2.1.0",
+    "@angular/http": "~2.1.0",
+    "@angular/platform-browser": "~2.1.0",
+    "@angular/platform-browser-dynamic": "~2.1.0",
+    "@angular/router": "~3.1.0",
+    "core-js": "^2.4.1",
+    "rxjs": "5.0.0-beta.12",
+    "ts-helpers": "^1.1.1",
+    "zone.js": "^0.6.23"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^2.2.30",
+    "@types/jquery": "^2.0.34",
+    "@types/node": "^6.0.42",
+    "angular-cli": "1.0.0-beta.18",
+    "codelyzer": "1.0.0-beta.1",
+    "jasmine-core": "2.4.1",
+    "jasmine-spec-reporter": "2.5.0",
+    "karma": "1.2.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-cli": "^1.0.1",
+    "karma-jasmine": "^1.0.2",
+    "karma-remap-istanbul": "^0.2.1",
+    "protractor": "4.0.9",
+    "ts-node": "1.2.1",
+    "tslint": "3.13.0",
+    "typescript": "~2.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sauravgaursmith/ng2-emojify.git"
+  }
+}
