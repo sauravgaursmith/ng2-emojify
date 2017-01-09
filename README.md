@@ -1,12 +1,11 @@
-## This is an angular 2 module to support built-in and custom emoji in an angular 2 project.
+ ## This is an angular 2 module to support built-in and custom emoji in an angular 2 project.
 
-### Installation
+ ### Installation
 
 ```sh
 npm install ng2-emojify  --save
 ```
-
-### use
+ ### use
 
 After installation, use the following steps
 ####1) Import  `CustomEmotion` and `Emotion` services to the component where you want to use ng2-emojify module like this. 
@@ -50,8 +49,8 @@ export class AppModule {
 
 ```
 
-#### Please report issues at `https://github.com/sauravgaursmith/ng2-emojify/issues`
+ #### Please report issues at `https://github.com/sauravgaursmith/ng2-emojify/issues`
 
-### License
+ ### License
 
 [MIT](LICENSE)
