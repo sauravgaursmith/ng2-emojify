@@ -50,7 +50,8 @@ export class AppModule {
 
 ```
 
+#### Please report issues at `https://github.com/sauravgaursmith/ng2-emojify/issues`
 
-## License
+### License
 
 [MIT](LICENSE)
