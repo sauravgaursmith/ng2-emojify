@@ -45,17 +45,6 @@ export class AppModule {
 #### To use custom emoji
 
 ##### Add `CustomEmotion` service to your component `.ts` file. 
- ```js
-import {CustomEmotion, Emotion} from 'ng2-emojify';
-```
-
-After installation, use the following steps
-####1) Import  `CustomEmotion` and `Emotion` services to the component where you want to use ng2-emojify module like this. 
-
-Here are two services namely- `CustomEmotion` and `Emotion`.
-
-       * Use `CustomEmotion` service to add your custom emoji images or gif files
-       * Use `Emotion` service to listen each click on emoji shown in emoji menu
 
 ```js
 import {CustomEmotion} from 'ng2-emojify';
@@ -85,6 +74,21 @@ constructor(private customEmotion: CustomEmotion) {
 
 
 
+
+
+ ```js
+import {CustomEmotion, Emotion} from 'ng2-emojify';
+```
+
+After installation, use the following steps
+####1) Import  `CustomEmotion` and `Emotion` services to the component where you want to use ng2-emojify module like this. 
+
+Here are two services namely- `CustomEmotion` and `Emotion`.
+
+       * Use `CustomEmotion` service to add your custom emoji images or gif files
+       * Use `Emotion` service to listen each click on emoji shown in emoji menu
+
+```js
 
 ####2) Add following code to your `constructor` 
 ```js
@@ -120,24 +124,6 @@ constructor(private customEmotion: CustomEmotion, private emotion: Emotion) {
   }
   
 ```
-
-####3) `Ng2EmojifyModule` to the module in which your component is declared like this.
-
-```js
-import {Ng2EmojifyModule} from 'ng2-emojify';
-
-@NgModule({
- ...
-  imports: [
-    Ng2EmojifyModule  // like it.
-  ],
- ...
-})
-export class AppModule {
-}
-
-```
-#### Please report issues at `https://github.com/sauravgaursmith/ng2-emojify/issues`
 
 ### License
 
