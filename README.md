@@ -142,8 +142,104 @@ Here, when `button` is clicked it will display emoji menu with built-in and cust
 its id `(emojiIdentity)` can be listen in `CaptureEmojiClick()` in your componet `constructor`. When you click outside 
 `emoji menu`, it gets closed.
 
-###### To customze emoji-menu css
+###### ` IMPORTANT: Please give a unique id to the HTML element on which you have added the [emotion-menu] directive`
 
+##### To customze emoji-menu css
+There are three main HTML tags that contitutes the emoji-menu, two of them are `<div>` and one `<img>`. You can write your
+custom css for all of these. `There is one main div that contains whole menu. second div contains the image and third is itself image`. To write css for all of these, Youcan write as...
+
+#######make a seprate file with extention `.ts` to contain css
+You can name it whatever you like. such as `custom-emoji-menu-css.ts`. It may be surprising to you but soon it will be clear to you later. Now write your css like this in your `.ts` file.
+```js
+/* ***********************************************
+   * custom css declarations
+   * *********************************************** */
+   
+ export const  emotionCss = {
+    customEmotionMenuCss: {
+    position: 'fixed',
+    'border-radius': '10px 10px 10px 0px',
+    width: 520 + 'px',
+    height: 200 + 'px',
+    'background-color': 'lightblue',
+    border: '1px solid blue',
+    'z-index': 1,
+    'overflow-x': 'hidden'
+  },
+  customEmotionContainerCss: {
+    float: 'left',
+    width: 80 + 'px',
+    height: 80 + 'px',
+    margin: '15px'
+  },
+  
+  customEmotionImageCss: {
+    width: '100%',
+    height: '100%',
+    margin: '0px',
+    'border-radius': '50%'
+  }
+ };
+```
+Here `customEmotionMenuCss` is css for main `div` that holds the emojis, `customEmotionContainerCss` is css for the second `div` inside the main `div` and `customEmotionImageCss` is css for the emoji image (`img` tag) it self.
+
+Now, you have written your custom css. import it in the main component `.ts` file and use like this...
+
+```js
+import {CustomEmotion, Emotion} from 'ng2-emojify';
+import {emotionCss} from './custom-emoji-menu-css.ts';
+
+...
+
+customEmotionCss: any;
+
+constructor(private customEmotion: CustomEmotion, private emotion: Emotion) {
+
+    /* initialize the customEmotionCss value */
+     customEmotionCss = emotionCss;      // <---------------- like it.
+
+    /* Mandatory to keep in constructor */
+    
+    /* ***************************************************************************
+     *  @ CustomEmotion
+     * `imageId` - This is the id which will be used to convert into emoji.
+     * `imageUrl` - This is the path to that image/gif which is to be used as emoji.
+     * `title` - This is the `title` to be shown as `tooltip`.
+     * *************************************************************************** */
+     
+    this.customEmotion.AddCustomEmotions([
+      {
+        imageId: 'myemojiId',
+        imageUrl: 'assets/gif/my-emoji.jpg',
+        title: 'My Emoji'
+      }
+    ]);
+}
+
+  /* ********************************************************************************
+     *  @ Emotion
+     * `emojiIdentity` - This is the simple string like `:happy:` or `:smile:` of the
+        emoji that has been clicked in the emoji menu.
+     * *************************************************************************** */
+     
+     this.emotion.CaptureEmojiClick().subscribe((emojiIdentity: string) => {
+      // write your logic here
+    });
+}
+...
+```
+
+Now you have to provide css to the `[emotion-menu]` directive in your `template` file as here...
+```html
+ <div [innerHTML]="message | emojify"></div>
+ <button [emotion-menu] ="customEmotionCss" id="btn">Menu</button>  <! ------------ Lilke this.>
+ <emoji-menu></emoji-menu>
+ ```
+## Congrates 
+This is all about this module.
+
+##### Please report issues at `https://github.com/sauravgaursmith/ng2-emojify/issues`
+##### Please sent your comments, queries and suggetions for the future releases at `saurav.gaur011@gmail.com`
 
 ### License
 
