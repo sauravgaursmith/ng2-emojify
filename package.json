@@ -1,6 +1,6 @@
 {
   "name": "ng2-emojify",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "description": "An angular 2 module to support built-in and custom emoji ",
   "main": "ng2-emojify.js",
   "scripts": {
