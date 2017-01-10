@@ -46,8 +46,6 @@ export class AppModule {
 ```
 You can customize this css according to your need.
 
-#### To use built-in emoji
-
 ##### Add `emojify` pipe to `message` in your component `template`. Like it ...
 
 ```html
