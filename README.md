@@ -69,26 +69,28 @@ constructor(private customEmotion: CustomEmotion) {
     
     /* ***************************************************************************
      *  @ CustomEmotion
-     * `imageId` - This is the id which will be used to convert into emoji.
-     * `imageUrl` - This is the path to that image/gif which is to be used as emoji.
+     * `emojiId` - This is the id which will be used to convert into emoji.
+     * `emojiUrl` - This is the path to that image/gif which is to be used as emoji.
      * `title` - This is the `title` to be shown as `tooltip`.
      * *************************************************************************** */
      
     this.customEmotion.AddCustomEmotions([
       {
-        imageId: 'myemojiId',
-        imageUrl: 'assets/gif/my-emoji.jpg',
+        emojiId: 'myemojiId',
+        emojiUrl: 'assets/emoji/my-emoji.jpg',
         title: 'My Emoji'
       }
     ]);
 }
 ...
 ```
-Here `imageUrl` is path to the image which is to be used as emoji. An emoji file may be `.jpg`, `.png` and
+Here `emojiUrl` is path to the image which is to be used as emoji. An emoji file may be `.jpg`, `.png` and
 `.gif` file. `assets/gif/` is `default` path used by this module. However you are free to give any full path 
 to your emoji file.
 Now if you `message` like this- `this is my custom emoji. :myemojiId:`. `:myemojiId:` will be conveted to your 
 custom emoji image.
+
+###### `IMPORTANT: Please note if you use "emojiId" that is reserved for the built-in emoji. It will override the built-in`
 
 ### To use emoji menu 
 
@@ -106,19 +108,19 @@ constructor(private customEmotion: CustomEmotion, private emotion: Emotion) {
     
     /* ***************************************************************************
      *  @ CustomEmotion
-     * `imageId` - This is the id which will be used to convert into emoji.
-     * `imageUrl` - This is the path to that image/gif which is to be used as emoji.
+     * `emojiId` - This is the id which will be used to convert into emoji.
+     * `emojiUrl` - This is the path to that image/gif which is to be used as emoji.
      * `title` - This is the `title` to be shown as `tooltip`.
      * *************************************************************************** */
      
     this.customEmotion.AddCustomEmotions([
       {
-        imageId: 'myemojiId',
-        imageUrl: 'assets/gif/my-emoji.jpg',
+        emojiId: 'myemojiId',
+        emojiUrl: 'assets/emoji/my-emoji.jpg',
         title: 'My Emoji'
       }
     ]);
-}
+
 
   /* ********************************************************************************
      *  @ Emotion
@@ -200,23 +202,21 @@ constructor(private customEmotion: CustomEmotion, private emotion: Emotion) {
     /* initialize the customEmotionCss value */
      customEmotionCss = emotionCss;      // <---------------- like it.
 
-    /* Mandatory to keep in constructor */
-    
     /* ***************************************************************************
      *  @ CustomEmotion
-     * `imageId` - This is the id which will be used to convert into emoji.
-     * `imageUrl` - This is the path to that image/gif which is to be used as emoji.
+     * `emojiId` - This is the id which will be used to convert into emoji.
+     * `emojiUrl` - This is the path to that image/gif which is to be used as emoji.
      * `title` - This is the `title` to be shown as `tooltip`.
      * *************************************************************************** */
      
     this.customEmotion.AddCustomEmotions([
       {
-        imageId: 'myemojiId',
-        imageUrl: 'assets/gif/my-emoji.jpg',
+        emojiId: 'myemojiId',
+        emojiUrl: 'assets/emoji/my-emoji.jpg',
         title: 'My Emoji'
       }
     ]);
-}
+
 
   /* ********************************************************************************
      *  @ Emotion
