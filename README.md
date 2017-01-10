@@ -71,14 +71,12 @@ constructor(private customEmotion: CustomEmotion) {
 }
 ...
 ```
+Here `imageUrl` is path to the image which is to be used as emoji. An emoji file may be `.jpg`, `.png` and
+`.gif` file. `assets/gif/` is `default` path to used by this module. However you are free to give any full path 
+to your emoji file.
+Now if you `message` like this- `this is my custom emoji. :myemojiId:`. `:myemojiId:` will be conveted to your 
+custom emoji image.
 
-
-
-
-
- ```js
-import {CustomEmotion, Emotion} from 'ng2-emojify';
-```
 
 After installation, use the following steps
 ####1) Import  `CustomEmotion` and `Emotion` services to the component where you want to use ng2-emojify module like this. 
