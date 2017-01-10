@@ -1,6 +1,6 @@
 ## This is an angular 2 module to support built-in and custom emoji in an angular 2 project.
 
-Link to the Demo application https://github.com/sauravgaursmith/ng2-emojify-example/blob/master/README.md
+`ng2-emojify` recommands you to see [Demo application] (https://github.com/sauravgaursmith/ng2-emojify-example/blob/master/README.md)
 
 ### Prerequisite 
        * Angular-cli: 1.0.0-beta.18 or higher
@@ -240,7 +240,7 @@ Now you have to provide css to the `[emotion-menu]` directive in your `template`
 ### Congrates 
 This is all about this module.
 
-###### Please report issues at `https://github.com/sauravgaursmith/ng2-emojify/issues`
+###### Please report issues at https://github.com/sauravgaursmith/ng2-emojify/issues
 ###### Please sent your comments, queries and suggetions for the future releases at `saurav.gaur011@gmail.com`
 
 ### License
