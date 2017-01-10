@@ -42,10 +42,9 @@ export class AppModule {
  Here `message` is any message like - `I'm so happy today. :happy:`. In this message `:happy:`
  is an emoji identity. It will be converted to an image tag after passing through `emojify` pipe.
  
- 
- #### To use custom emoji
- 
- ##### Add `CustomEmotion` service to your component `.ts` file. 
+#### To use custom emoji
+
+##### Add `CustomEmotion` service to your component `.ts` file. 
  ```js
 import {CustomEmotion, Emotion} from 'ng2-emojify';
 ```
