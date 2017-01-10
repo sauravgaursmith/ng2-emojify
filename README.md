@@ -15,6 +15,10 @@ npm install ng2-emojify  --save
 
 Developers can use this module in angular 2 projects for built-in or custom emoji or both.
 Steps to use :
+##### Put `emoji` folder into the `assets` folder
+Goto the `node_modules/ng2-emojify/emoji` in your Angualr 2 Project and Copy/Cut the `emoji` folder from there and
+paste this `emoji` folder to your `assets` folder inside your Angular 2 project.
+
 ##### Add `Ng2EmojifyModule` to the module in which your `component` is declared like this.
 
 ```js
@@ -232,14 +236,14 @@ constructor(private customEmotion: CustomEmotion, private emotion: Emotion) {
 Now you have to provide css to the `[emotion-menu]` directive in your `template` file as here...
 ```html
  <div [innerHTML]="message | emojify"></div>
- <button [emotion-menu] ="customEmotionCss" id="btn">Menu</button>  <! ------------ Lilke this.>
+ <button [emotion-menu] ="customEmotionCss" id="btn">Menu</button>  
  <emoji-menu></emoji-menu>
  ```
-## Congrates 
+### Congrates 
 This is all about this module.
 
-##### Please report issues at `https://github.com/sauravgaursmith/ng2-emojify/issues`
-##### Please sent your comments, queries and suggetions for the future releases at `saurav.gaur011@gmail.com`
+###### Please report issues at `https://github.com/sauravgaursmith/ng2-emojify/issues`
+###### Please sent your comments, queries and suggetions for the future releases at `saurav.gaur011@gmail.com`
 
 ### License
 
