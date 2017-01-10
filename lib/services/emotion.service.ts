@@ -4,19 +4,19 @@ import {Observable} from 'rxjs/Observable';
 
 @Injectable()
 export class EmotionService {
-  private emotionInformation: any;
-  private subject: Subject<string> = new Subject<string>();
+    private emotionInformation: any;
+    private subject: Subject<string> = new Subject<string>();
 
-  constructor() {
-  }
+    constructor() {
+    }
 
-  SetEmotionInformation(emotionInformation: any): void {
-    this.emotionInformation = ':' + emotionInformation.imageId + ':';
-    this.subject.next(this.emotionInformation);
-  }
+    SetEmotionInformation(emotionInformation: any): void {
+        this.emotionInformation = ':' + emotionInformation.emojiId + ':';
+        this.subject.next(this.emotionInformation);
+    }
 
-  CaptureEmojiClick(): Observable<any> {
-    return this.subject.asObservable();
-  }
+    CaptureEmojiClick(): Observable<any> {
+        return this.subject.asObservable();
+    }
 
 }
