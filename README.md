@@ -31,6 +31,17 @@ export class AppModule {
 }
 
 ```
+##### Add the following css to your compoonent `.css` file.
+```css
+:host >>> .emogi-image {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+```
+You can customize this css according to your need.
+
 #### To use built-in emoji
 
 ##### Add `emojify` pipe to `message` in your component `template`. Like it ...
@@ -72,10 +83,67 @@ constructor(private customEmotion: CustomEmotion) {
 ...
 ```
 Here `imageUrl` is path to the image which is to be used as emoji. An emoji file may be `.jpg`, `.png` and
-`.gif` file. `assets/gif/` is `default` path to used by this module. However you are free to give any full path 
+`.gif` file. `assets/gif/` is `default` path used by this module. However you are free to give any full path 
 to your emoji file.
 Now if you `message` like this- `this is my custom emoji. :myemojiId:`. `:myemojiId:` will be conveted to your 
 custom emoji image.
+
+### To use emoji menu 
+
+There is a tradition to use menu to select an emoji to send as message. Like in `Facebook`, `Twiiter`, `WatsApp` 
+and ` Hangout` and so on. `ng2-emojify` has a built-in support for the same. To use built-in menu support do this...
+
+##### Add `Emotion` service to your component `.ts` file
+```js
+import {CustomEmotion, Emotion} from 'ng2-emojify';
+
+...
+
+constructor(private customEmotion: CustomEmotion, private emotion: Emotion) {
+    /* Mandatory to keep in constructor */
+    
+    /* ***************************************************************************
+     *  @ CustomEmotion
+     * `imageId` - This is the id which will be used to convert into emoji.
+     * `imageUrl` - This is the path to that image/gif which is to be used as emoji.
+     * `title` - This is the `title` to be shown as `tooltip`.
+     * *************************************************************************** */
+     
+    this.customEmotion.AddCustomEmotions([
+      {
+        imageId: 'myemojiId',
+        imageUrl: 'assets/gif/my-emoji.jpg',
+        title: 'My Emoji'
+      }
+    ]);
+}
+
+  /* ********************************************************************************
+     *  @ Emotion
+     * `emojiIdentity` - This is the simple string like `:happy:` or `:smile:` of the
+        emoji that has been clicked in the emoji menu.
+     * *************************************************************************** */
+     
+     this.emotion.CaptureEmojiClick().subscribe((emojiIdentity: string) => {
+      // write your logic here
+    });
+}
+...
+```
+You can write your own logic in `CaptureEmojiClick()` to add this `emojiIdentity` to your message string to send directly it in message like in `Facebook` when emoji is clicked by user. You can write your code to add emoji to your `input` or `textarea` like `Skype` and then can send in message all at once.
+
+##### Add `[emotion-menu]` directive and `<emoji-menu></emoji-menu>` componet to your componet `.template`. 
+```html
+ <div [innerHTML]="message | emojify"></div>
+ <button [emotion-menu] id="btn">Menu</button>
+ <emoji-menu></emoji-menu>
+ ```
+Here, when `button` is clicked it will display emoji menu with built-in and custom emojis. when an emoji is clicked, 
+its id `(emojiIdentity)` can be listen in `CaptureEmojiClick()` in your componet `constructor`. When you click outside 
+`emoji menu`, it gets closed.
+
+###### To customze emoji-menu css
+
 
 ### License
 
