@@ -85,7 +85,7 @@ constructor(private customEmotion: CustomEmotion) {
 ...
 ```
 Here `emojiUrl` is path to the image which is to be used as emoji. An emoji file may be `.jpg`, `.png` and
-`.gif` file. `assets/gif/` is `default` path used by this module. However you are free to give any full path 
+`.gif` file. `assets/emoji/` is `default` path used by this module. However you are free to give any full path 
 to your emoji file.
 Now if you `message` like this- `this is my custom emoji. :myemojiId:`. `:myemojiId:` will be conveted to your 
 custom emoji image.
