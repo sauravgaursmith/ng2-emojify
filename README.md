@@ -15,6 +15,7 @@ npm install ng2-emojify  --save
 
 Developers can use this module in angular 2 projects for built-in or custom emoji or both.
 Steps to use :
+
 ##### Put `emoji` folder into the `assets` folder
 Goto the `node_modules/ng2-emojify/emoji` in your Angualr 2 Project and Copy/Cut the `emoji` folder from there and
 paste this `emoji` folder to your `assets` folder inside your Angular 2 project.

@@ -1,0 +1,16 @@
+/* *********************************************************
+ * PROJECT: ng2-emogify
+ * DEVELOPER: Saurav Singh
+ * EMAIL: saurav.gaur011@gmail.com
+ * Next Version Features
+ * ******************************************************* */
+
+
+  * Next Version Features
+  * *******************************************************
+
+
+ 1. Video
+ 2. Full custom Html and Css support
+ 3. Suggestion text support
+
