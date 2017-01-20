@@ -1,6 +1,6 @@
 ## This is an angular 2 module to support built-in and custom emoji in an angular 2 project.
 
-`ng2-emojify` recommands you to see [Demo application] (https://github.com/sauravgaursmith/ng2-emojify-example/blob/master/README.md)
+`ng2-emojify` recommends you to see [Demo application](https://github.com/sauravgaursmith/ng2-emojify-example/blob/master/README.md)
 
 ### Prerequisite 
        * Angular-cli: 1.0.0-beta.18 or higher
@@ -36,7 +36,7 @@ export class AppModule {
 }
 
 ```
-##### Add the following css to your compoonent `.css` file.
+##### Add the following css to your component `.css` file.
 ```css
 :host >>> .emogi-image {
   height: 60px;
@@ -88,14 +88,14 @@ constructor(private customEmotion: CustomEmotion) {
 Here `emojiUrl` is path to the image which is to be used as emoji. An emoji file may be `.jpg`, `.png` and
 `.gif` file. `assets/emoji/` is `default` path used by this module. However you are free to give any full path 
 to your emoji file.
-Now if you `message` like this- `this is my custom emoji. :myemojiId:`. `:myemojiId:` will be conveted to your 
+Now if you `message` like this- `this is my custom emoji. :myemojiId:`. `:myemojiId:` will be converted into your
 custom emoji image.
 
 ###### `IMPORTANT: Please note if you use "emojiId" that is reserved for the built-in emoji. It will override the built-in`
 
 ### To use emoji menu 
 
-There is a tradition to use menu to select an emoji to send as message. Like in `Facebook`, `Twiiter`, `WatsApp` 
+There is a tradition to use menu to select an emoji to send as message. Like in `Facebook`, `Twitter`, `WatsApp`
 and ` Hangout` and so on. `ng2-emojify` has a built-in support for the same. To use built-in menu support do this...
 
 ##### Add `Emotion` service to your component `.ts` file
@@ -137,23 +137,23 @@ constructor(private customEmotion: CustomEmotion, private emotion: Emotion) {
 ```
 You can write your own logic in `CaptureEmojiClick()` to add this `emojiIdentity` to your message string to send directly it in message like in `Facebook` when emoji is clicked by user. You can write your code to add emoji to your `input` or `textarea` like `Skype` and then can send in message all at once.
 
-##### Add `[emotion-menu]` directive and `<emoji-menu></emoji-menu>` componet to your componet `.template`. 
+##### Add `[emotion-menu]` directive and `<emoji-menu></emoji-menu>` component to your component `.template`.
 ```html
  <div [innerHTML]="message | emojify"></div>
  <button [emotion-menu] id="btn">Menu</button>
  <emoji-menu></emoji-menu>
  ```
 Here, when `button` is clicked it will display emoji menu with built-in and custom emojis. when an emoji is clicked, 
-its id `(emojiIdentity)` can be listen in `CaptureEmojiClick()` in your componet `constructor`. When you click outside 
+its id `(emojiIdentity)` can be listen in `CaptureEmojiClick()` in your component `constructor`. When you click outside
 `emoji menu`, it gets closed.
 
 ###### ` IMPORTANT: Please give a unique id to the HTML element on which you have added the [emotion-menu] directive`
 
-##### To customze emoji-menu css
-There are three main HTML tags that contitutes the emoji-menu, two of them are `<div>` and one `<img>`. You can write your
+##### To customize emoji-menu css
+There are three main HTML tags that constitutes the emoji-menu, two of them are `<div>` and one `<img>`. You can write your
 custom css for all of these. `There is one main div that contains whole menu. second div contains the image and third is itself image`. To write css for all of these, Youcan write as...
 
-#######make a seprate file with extention `.ts` to contain css
+#######make a seprate file with extension `.ts` to contain css
 You can name it whatever you like. such as `custom-emoji-menu-css.ts`. It may be surprising to you but soon it will be clear to you later. Now write your css like this in your `.ts` file.
 ```js
 /* ***********************************************
@@ -242,7 +242,7 @@ Now you have to provide css to the `[emotion-menu]` directive in your `template`
 This is all about this module.
 
 ###### Please report issues at https://github.com/sauravgaursmith/ng2-emojify/issues
-###### Please sent your comments, queries and suggetions for the future releases at `saurav.gaur011@gmail.com`
+###### Please sent your comments, queries and suggestions for the future releases at `saurav.gaur011@gmail.com`
 
 ### License
 
