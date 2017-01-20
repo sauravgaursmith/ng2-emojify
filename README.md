@@ -86,7 +86,7 @@ constructor(private customEmotion: CustomEmotion) {
 ...
 ```
 Here `emojiUrl` is path to the image which is to be used as emoji. An emoji file may be `.jpg`, `.png` and
-`.gif` file. `assets/emoji/` is `default` path used by this module. However you are free to give any full path 
+`.gif` file. `assets/emoji/` is `default` path used by this module. However, you are free to give any full path
 to your emoji file.
 Now if you `message` like this- `this is my custom emoji. :myemojiId:`. `:myemojiId:` will be converted into your
 custom emoji image.
@@ -153,7 +153,7 @@ its id `(emojiIdentity)` can be listen in `CaptureEmojiClick()` in your componen
 There are three main HTML tags that constitutes the emoji-menu, two of them are `<div>` and one `<img>`. You can write your
 custom css for all of these. `There is one main div that contains whole menu. second div contains the image and third is itself image`. To write css for all of these, Youcan write as...
 
-#######make a seprate file with extension `.ts` to contain css
+####### make a separate file with extension `.ts` to contain css
 You can name it whatever you like. such as `custom-emoji-menu-css.ts`. It may be surprising to you but soon it will be clear to you later. Now write your css like this in your `.ts` file.
 ```js
 /* ***********************************************
@@ -201,7 +201,7 @@ customEmotionCss: any;
 constructor(private customEmotion: CustomEmotion, private emotion: Emotion) {
 
     /* initialize the customEmotionCss value */
-     this.customEmotionCss = emotionCss;      // <---------------- like it.
+     this.customEmotionCss = emotionCss;      // <---------------- like this.
 
     /* ***************************************************************************
      *  @ CustomEmotion
@@ -238,11 +238,11 @@ Now you have to provide css to the `[emotion-menu]` directive in your `template`
  <button [emotion-menu] ="customEmotionCss" id="btn">Menu</button>  
  <emoji-menu></emoji-menu>
  ```
-### Congrates 
+### Congrats
 This is all about this module.
 
-###### Please report issues at https://github.com/sauravgaursmith/ng2-emojify/issues
-###### Please sent your comments, queries and suggestions for the future releases at `saurav.gaur011@gmail.com`
+###### Report issues [here](https://github.com/sauravgaursmith/ng2-emojify/issues)
+###### Feel free to sent your comments, queries and suggestions at `js.tech.feedback@gmail.com`
 
 ### License
 
