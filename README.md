@@ -1,6 +1,6 @@
 ## This is an angular 2 module to support built-in and custom emoji in an angular 2 project.
 
-`ng2-emojify` recommends you to see [Demo application](https://github.com/sauravgaursmith/ng2-emojify-example/blob/master/README.md)
+You can see [Live Demo application](https://ng2-emojify-example.firebaseapp.com), or [run on local system](https://github.com/sauravgaursmith/ng2-emojify-example/blob/master/README.md)
 
 ### Prerequisite 
        * Angular-cli: 1.0.0-beta.18 or higher
