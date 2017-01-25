@@ -10,6 +10,8 @@ You can see [Live Demo application](https://ng2-emojify-example.firebaseapp.com)
 ### Installation
 ```sh
 npm install ng2-emojify  --save
+        or
+yarn add ng2-emojify --save
 ```
 ### use
 
