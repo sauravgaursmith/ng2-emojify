@@ -2,6 +2,8 @@
 
 You can see [Live Demo application](https://ng2-emojify-example.firebaseapp.com), or [run on local system](https://github.com/sauravgaursmith/ng2-emojify-example/blob/master/README.md)
 
+We are going to make necessary changes in documentation. You are requested to give your valuable suggestions. 
+
 ### Prerequisite 
        * Angular-cli: 1.0.0-beta.18 or higher
        * NPM : 4.0.2 or higher
