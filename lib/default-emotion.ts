@@ -3,12 +3,12 @@ let path: string = 'assets/emoji/';
 export const Emotions: any = [
   {
     emojiId: 'hello',
-    emojiUrl: path + 'hello.gif',
+    emojiUrl: path + 'hello.png',
     title: 'Hello'
   },
   {
     emojiId: 'happy',
-    emojiUrl: path + 'happy.jpg',
+    emojiUrl: path + 'happy.png',
     title: 'Happy'
   },
   {
@@ -18,7 +18,7 @@ export const Emotions: any = [
   },
   {
     emojiId: 'allthebest',
-    emojiUrl: path + 'allthebest.jpg',
+    emojiUrl: path + 'allthebest.png',
     title: 'All The Best Buddy'
   },
   {
@@ -28,37 +28,32 @@ export const Emotions: any = [
   },
   {
     emojiId: 'confusion',
-    emojiUrl: path + 'confusion.jpg',
+    emojiUrl: path + 'confusion.png',
     title: 'Confusion'
   },
   {
     emojiId: 'cry',
-    emojiUrl: path + 'cry.jpg',
+    emojiUrl: path + 'cry.png',
     title: 'Cry'
   },
   {
-    emojiId: 'dance',
-    emojiUrl: path + 'dance.png',
-    title: 'Dance'
-  },
-  {
     emojiId: 'hi',
-    emojiUrl: path + 'hi.gif',
+    emojiUrl: path + 'hi.png',
     title: 'Hi'
   },
   {
     emojiId: 'like',
-    emojiUrl: path + 'like.jpg',
+    emojiUrl: path + 'like.png',
     title: 'Like'
   },
   {
     emojiId: 'sad',
-    emojiUrl: path + 'sad.jpg',
+    emojiUrl: path + 'sad.png',
     title: 'Sad'
   },
   {
     emojiId: 'heart',
-    emojiUrl: path + 'heart.jpg',
+    emojiUrl: path + 'heart.png',
     title: 'Heart'
   }
 ];

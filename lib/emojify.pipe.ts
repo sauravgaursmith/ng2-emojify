@@ -15,7 +15,7 @@ export class EmojifyPipe implements PipeTransform {
   transform(value: any, args?: any): any {
     for (let emotion of this.emotions) {
       let re = new RegExp(':' + emotion.emojiId + ':', 'ig');
-      value = value.replace(re, '<img src="' + emotion.emojiUrl + '"' + 'class="emogi-image"' + ' title="' + emotion.title + '">');
+      value = value.replace(re, `<img src= ${emotion.emojiUrl} class="emogi-image" title= ${emotion.title}>`);
     }
     return value;
   }
