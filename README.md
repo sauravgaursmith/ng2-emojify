@@ -5,24 +5,26 @@ You can see [Live Demo application](https://ng2-emojify-example.firebaseapp.com)
 <!-- ![alt snapshot](./emoji/dance.png) -->
 ##### Sample message 
 
-I'm so happy <img src="./emoji/happy.png" width="20"> today after getting 1000 likes <img src="./emoji/like.png" width="20">. Thanks you friends. <img src="./emoji/heart.png" width="20">
+I'm so happy <img src="./emoji/happy.png" alt = "😊" width="20"> today after getting 1000 likes <img src="./emoji/like.png" alt="👍" width="20">. Thanks you friends. <img src="./emoji/heart.png" alt="❤❤" width="20">
 
 ##### [Emoji List](#)
 
 [<b>Note</b> This is the list built-in supported emojis. But custom emoji(s) can be added.]()
 
-| S. No. | Emoji                                          | Emotion     | Id          |
-|--------|------------------------------------------------|-------------|-------------|
-| 1      |   <img src="./emoji/happy.png" width="20">     | Happy       | :happy:     |
-| 2      |   <img src="./emoji/hi.png" width="20">        | Hi          | :hi:        |
-| 3      |   <img src="./emoji/confusion.png" width="20"> | Confusion   | :confusion: |
-| 4      |   <img src="./emoji/cry.png" width="20">       | Cry         | :cry :      |
-| 5      |   <img src="./emoji/flower.png" width="20">    | Flower      | :flower:    |
-| 6      |   <img src="./emoji/heart.png" width="20">     | Heart       | :heart :    |
-| 7      |   <img src="./emoji/hello.png" width="20">     | Hello       | :hello:     |
-| 8      |   <img src="./emoji/like.png" width="20">      | Like        | :like:      |
-| 9      |   <img src="./emoji/sad.png" width="20">       | Sad         | :sad:       |
-| 10     |   <img src="./emoji/althebest.png" width="20"> | All The Best| :althebest: |
+![alt snapshot](./emoji-table.png)
+
+<!-- | S. No. | Emoji                                        | Emotion     | Id          |
+|--------|----------------------------------------------|-------------|-------------|
+| 1      |   <img src="emoji/happy.png" width="20">     | Happy       | :happy:     |
+| 2      |   <img src="emoji/hi.png" width="20">        | Hi          | :hi:        |
+| 3      |   <img src="emoji/confusion.png" width="20"> | Confusion   | :confusion: |
+| 4      |   <img src="emoji/cry.png" width="20">       | Cry         | :cry :      |
+| 5      |   <img src="emoji/flower.png" width="20">    | Flower      | :flower:    |
+| 6      |   <img src="emoji/heart.png" width="20">     | Heart       | :heart :    |
+| 7      |   <img src="emoji/hello.png" width="20">     | Hello       | :hello:     |
+| 8      |   <img src="emoji/like.png" width="20">      | Like        | :like:      |
+| 9      |   <img src="emoji/sad.png" width="20">       | Sad         | :sad:       |
+| 10     |   <img src="emoji/althebest.png" width="20"> | All The Best| :althebest: | -->
 
 ##### [Prerequisite](#) 
        * Angular-cli: 1.0.0-beta.18 or higher
