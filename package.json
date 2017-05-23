@@ -70,15 +70,17 @@
   "gitHead": "dd0c077c8518984561cab3d1e0636c03dce520d5",
   "homepage": "https://github.com/sauravgaursmith/ng2-emojify#readme",
   "keywords": [
-    "ng2-emojify",
-    "ng2",
-    "ng2-emo",
-    "emojify",
-    "custom",
-    "built-in",
     "emoji",
-    "angular-2",
-    "emotion"
+    "emojify",
+    "emotion",
+    "angular",
+    "chat",
+    "application",
+    "emo"
+    "built-in",
+    "custom",
+    "ng2",
+    "ng2-emojify"
   ],
   "license": "MIT",
   "main": "ng2-emojify.js",
@@ -99,5 +101,5 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "2.0.6"
+  "version": "2.0.7"
 }
