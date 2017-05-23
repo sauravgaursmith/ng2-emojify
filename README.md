@@ -5,7 +5,7 @@ You can see [Live Demo application](https://ng2-emojify-example.firebaseapp.com)
 <!-- ![alt snapshot](./emoji/dance.png) -->
 ##### Sample message 
 
-I'm so happy <img src="./emoji/happy.png" alt = "😊" width="20"> today after getting 1000 likes <img src="./emoji/like.png" alt="👍" width="20">. Thanks you friends. <img src="./emoji/heart.png" alt="❤❤" width="20">
+I'm so happy 😊 today after getting 1000 likes 👍. Thanks you friends. ❤
 
 ##### [Emoji List](#)
 
